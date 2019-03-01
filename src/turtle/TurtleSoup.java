@@ -129,7 +129,7 @@ public class TurtleSoup {
 	     * @param turtle the turtle context
 	     */
 	    public static void drawPersonalArt(Turtle turtle) {
-	    	 for(int i = 0; i < 15; i++)
+	    	 for(int i = 0; i <10; i++)
 	    	 { // i < 15 to limit size of shapes
 	             drawRegularPolygon(turtle, i, i*10);
 	             drawRegularPolygon(turtle, i*10, i);
@@ -146,7 +146,9 @@ public class TurtleSoup {
 	    public static void main(String args[]) {
 	        DrawableTurtle turtle = new DrawableTurtle();
 
-	        drawSquare(turtle, 40);
+	      //  drawSquare(turtle, 40);
+	       drawPersonalArt(turtle);
+	      //  drawRegularPolygon( turtle, 8, 25);
 
 	        // draw the window
 	        turtle.draw();
